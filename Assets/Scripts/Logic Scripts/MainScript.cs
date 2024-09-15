@@ -8,8 +8,15 @@ using UnityEngine.UI;
 public class MainScript : MonoBehaviour
 {
 	
-	private GameObject fpscounter;
+	public GameObject fpscounter;
 	private GameObject mCanvas;
+	public bool finishedloading = false;
+	
+	public uiplayerframe playerframe;
+	public Scripo textbox;
+	public uiplayerscript playerscript;
+	public uiclockscript clockscript;
+	public uibossframe bossframe;
 	public Camera canvas_camera;
 	public int fps = 60;
 	
@@ -24,6 +31,7 @@ public class MainScript : MonoBehaviour
 		fpscounter.transform.SetParent(mCanvas.transform);
 		fpscounter.transform.position = new Vector3(Screen.width* 0.99f, Screen.height * 0.05f, 0.0f);//pos
 																								 //textobj.transform.position = new Vector3(-300.0f, 50.0f, z2);//pos
+		
 		fpscounter.AddComponent<TextMeshProUGUI>();
 		fpscounter.GetComponent<TextMeshProUGUI>().fontSize = 30; //Default
 		fpscounter.GetComponent<TextMeshProUGUI>().lineSpacing = 60; //Default
@@ -41,6 +49,7 @@ public class MainScript : MonoBehaviour
         //Screen.SetResolution(640, 480, true);
 		fpscounter.transform.localScale = new Vector3(1.3f, 1.3f, 1);
 		StartCoroutine(fpsupdate());
+		StartCoroutine(load_canvas());
     }
 
 	IEnumerator fpsupdate()
@@ -50,6 +59,30 @@ public class MainScript : MonoBehaviour
 			fpscounter.GetComponent<TextMeshProUGUI>().SetText((int)(1f / Time.unscaledDeltaTime)+"fps"); //Default
 			yield return new WaitForSecondsRealtime(1);
 		}
+	}
+	
+		
+	IEnumerator load_canvas()
+	{
+		double timer = Time.realtimeSinceStartup;
+		
+		//fadein();
+		
+		while(true)
+		{
+			//yield return new WaitForSecondsRealtime(2);
+			if(textbox.finished_loading && playerscript.finished_loading && clockscript.finished_loading && bossframe.finished_loading)
+			{
+				Debug.Log("Finished loading canvas in "+(Time.realtimeSinceStartup - timer));
+				finishedloading = true;
+				//yield return new WaitForSecondsRealtime(3);
+				//yield return fadeout();
+				canvas_camera_insert();
+				break;
+			}
+			yield return null;
+		}
+		
 	}
 
 	void canvas_camera_insert()
