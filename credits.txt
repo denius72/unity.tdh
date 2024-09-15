@@ -1,0 +1,6 @@
+Tools:
+Buildify Blender plugin by Pavel Oliva
+
+Assets:
+Outside World Skybox - Katherine Gu @katherine_xx11, free use under Unsplash License
+Ryujin Attack Font by Jetsmax Studio

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3a976ebfc262d2240a7919e8957a1259
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Ryujin Attack
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a2ec16eb9e8745b5ebd3d3471a18c6aa, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

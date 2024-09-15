@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UnityProject\\TouhouDH\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProject\\TouhouDH\\Assets\\Scripts\\Scene Scripts\\SampleScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Scene Scripts\\SampleScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProject\\TouhouDH\\Assets\\Scripts\\Scene Scripts\\MainMenuScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Scene Scripts\\MainMenuScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProject\\TouhouDH\\Assets\\Shaders\\PostProcessShader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Shaders\\PostProcessShader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SampleScript.cs",
+              "DocumentMoniker": "D:\\UnityProject\\TouhouDH\\Assets\\Scripts\\Scene Scripts\\SampleScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Scene Scripts\\SampleScript.cs",
+              "ToolTip": "D:\\UnityProject\\TouhouDH\\Assets\\Scripts\\Scene Scripts\\SampleScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Scene Scripts\\SampleScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T12:32:51.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PostProcessShader.shader",
+              "DocumentMoniker": "D:\\UnityProject\\TouhouDH\\Assets\\Shaders\\PostProcessShader.shader",
+              "RelativeDocumentMoniker": "Assets\\Shaders\\PostProcessShader.shader",
+              "ToolTip": "D:\\UnityProject\\TouhouDH\\Assets\\Shaders\\PostProcessShader.shader",
+              "RelativeToolTip": "Assets\\Shaders\\PostProcessShader.shader",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-17T11:37:16.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainMenuScript.cs",
+              "DocumentMoniker": "D:\\UnityProject\\TouhouDH\\Assets\\Scripts\\Scene Scripts\\MainMenuScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Scene Scripts\\MainMenuScript.cs",
+              "ToolTip": "D:\\UnityProject\\TouhouDH\\Assets\\Scripts\\Scene Scripts\\MainMenuScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Scene Scripts\\MainMenuScript.cs",
+              "ViewState": "AQIAAGIBAAAAAAAAAAAAAHwBAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T13:22:17.501Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

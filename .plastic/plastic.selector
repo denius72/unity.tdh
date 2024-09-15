@@ -1,0 +1,4 @@
+repository "TouhouDH@Borderline_Fantastica@cloud"
+  path "/"
+    br "/main"
+    co "/main"

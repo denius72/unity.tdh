@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartingScene.unity
+    guid: 2d3355aad2a7ba34e89b112b434b56d3
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: ca17124236a69ff41b7ecb7470d56e8c
+  - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 0ddfe6d515eeea8e0b75b1664d8bfa22
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Test01.unity
+    guid: c490c71ad40cc3a40b8fb4938cd64791
+  - enabled: 1
+    path: Assets/Scenes/GensouHakurei.unity
+    guid: eaa50fb462d19684991027110893a127
+  - enabled: 1
+    path: Assets/Scenes/Test03.unity
+    guid: 5e1100e3e9ec05646b9d70fb241b94fa
+  - enabled: 1
+    path: Assets/Scenes/Test04.unity
+    guid: b19c7d658b2b9c146a3eac49d4ff7b82
+  - enabled: 1
+    path: Assets/Scenes/chapter0_intro.unity
+    guid: 6b4c78eb64021d34abc730f66192491a
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 4b6a5f475ac96be458d535ded0a0af85, type: 2}

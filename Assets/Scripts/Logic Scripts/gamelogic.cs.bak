@@ -1,0 +1,99 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class gamelogic : MonoBehaviour
+{
+    
+    public int player_life = 3;
+    public int maxlife = 9;
+
+    public int player_mp = 3;
+    public int maxmp = 5;
+	
+	public int player_graze = 0;
+    
+	public int bossmaxhp = 1000;
+	public int bosshp = 1000;
+	public int bossSpellCounter = 0;
+	
+    public int tookdamage = 0;
+    public int gainedlife = 0;
+	
+	//0 = Easy
+	//1 = Normal
+	//2 = Hard
+	//3 = Lunatic
+	//4 = Ultra Lunatic
+	public int difficulty = 0;
+	public bool overdrive = false;
+	
+	public float timer= 10.0f;
+
+	//0 = main menu
+		// pause menu shoudn't open
+	//1 = gameplay
+		// pause menu options are Resume, Retry, Options, Exit
+	//2 = Dialogue
+		// pause menu options are Resume, Skip, Exit
+	//3 = challenge
+		// pause menu options are Resume, Retry, Options, Exit
+		// difficulty will be set to "Overdrive"
+    public int gamestate = 0;
+	
+	public float SFXVolume = 1.0f;
+	public float MusicVolume = 1.0f;
+	
+	public bool playerframefadein;
+
+    [SerializeField] private Texture2D[] images;
+    [SerializeField] private Sprite[] sprites;
+    [SerializeField] private GameObject[] heartcollection;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        /*
+        for (int i = 0; i < maxlife; i++)
+        {
+            GameObject heartcol = new GameObject();
+            UISpritesAnimation u = heartcol.AddComponent<UISpritesAnimation>();
+            u.images = images;
+            u.sprites = sprites;
+            u.heartnum = i;
+            u.gl = this;
+            heartcollection[i] = heartcol;
+        }
+        */
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (tookdamage >= player_life)
+        {
+            //die
+        }
+        
+        if(tookdamage > 0)
+        {
+            player_life-=tookdamage;
+            tookdamage = 0;
+        }
+        else if(gainedlife > 0)
+        {
+            /*for (int i = player_life; i < player_life+gainedlife; i++)
+            {
+                GameObject heartcol = new GameObject();
+                UISpritesAnimation u = heartcol.AddComponent<UISpritesAnimation>();
+                u.images = images;
+                u.sprites = sprites;
+                u.heartnum = i;
+                heartcollection[i] = heartcol;
+            }*/
+            player_life+=gainedlife;
+            gainedlife = 0;
+        }
+        //yield return null;
+    }
+}
