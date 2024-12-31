@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DreamWorldBillboard
-  m_Shader: {fileID: -6465566751694194690, guid: 228f1d7d73641014796791cf0dd2119c, type: 3}
+  m_Name: SkyTwMonolith
+  m_Shader: {fileID: -6465566751694194690, guid: 602997df6d53e68409efbc2dd8b018cd, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -61,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FirstTex:
-        m_Texture: {fileID: 2800000, guid: 537f8cc76671d6e48860936c9a2aa4dc, type: 3}
+        m_Texture: {fileID: 2800000, guid: af4fd7792d221dd47bd5540a902a5ff4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -81,7 +81,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SecondTex:
-        m_Texture: {fileID: 2800000, guid: 8132a95380121824f84b8955e2e6721b, type: 3}
+        m_Texture: {fileID: 2800000, guid: af4fd7792d221dd47bd5540a902a5ff4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -89,7 +89,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ThirdTex:
-        m_Texture: {fileID: 2800000, guid: 8132a95380121824f84b8955e2e6721b, type: 3}
+        m_Texture: {fileID: 2800000, guid: af4fd7792d221dd47bd5540a902a5ff4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -110,7 +110,7 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _BlendOpacity: 1.02
+    - _BlendOpacity: 0.63
     - _BumpScale: 1
     - _CastShadows: 1
     - _ClearCoatMask: 0
@@ -122,7 +122,7 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FirstTexOpacity: 0.05
+    - _FirstTexOpacity: 1
     - _FirstTexRotation: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -136,8 +136,8 @@ Material:
     - _Scroll_Speed_X: 0
     - _Scroll_Speed_Y: 0
     - _SecondTexRotation: 0
-    - _SecondTextOpacity: 2.41
-    - _SecondaryBlendOpacity: 202.08
+    - _SecondTextOpacity: 1
+    - _SecondaryBlendOpacity: 3.85
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -145,7 +145,7 @@ Material:
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _TextureEnabled: 0
-    - _ThirdTexOpacity: 3.6
+    - _ThirdTexOpacity: -0.26
     - _ThirdTexRotation: 0
     - _WorkflowMode: 1
     - _ZTest: 4
@@ -155,12 +155,12 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Direction: {r: 0, g: 0, b: 0, a: 0}
-    - _DirectionFirstTex: {r: 0.001, g: 0.001, b: 0, a: 0}
-    - _DirectionSecondTex: {r: -0.001, g: 0, b: 0, a: 0}
-    - _DirectionThirdTex: {r: -0.002, g: -0.01, b: 0, a: 0}
+    - _DirectionFirstTex: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _DirectionSecondTex: {r: 0.02, g: 0.02, b: 0, a: 0}
+    - _DirectionThirdTex: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FirstTexTiling: {r: 5, g: 5, b: 0, a: 0}
-    - _SecondTexTiling: {r: 5, g: 5, b: 0, a: 0}
+    - _FirstTexTiling: {r: 1, g: 0.5, b: 0, a: 0}
+    - _SecondTexTiling: {r: 1, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _ThirdTexTiling: {r: 2, g: 2, b: 0, a: 0}
+    - _ThirdTexTiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

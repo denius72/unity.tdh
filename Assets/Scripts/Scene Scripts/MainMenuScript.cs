@@ -344,7 +344,7 @@ public class MainMenuScript : MonoBehaviour
 					Debug.Log("started loading main scene");
 					//StartCoroutine(load.LoadSceneAsync("GensouHakurei"));
 					//StartCoroutine(load.LoadSceneAsync("Test01"));
-					StartCoroutine(load.LoadSceneAsync("Test04"));
+					StartCoroutine(load.LoadSceneAsync("Test03"));
 					break;
 				case 1:
 					Debug.Log("2 was pressed");
