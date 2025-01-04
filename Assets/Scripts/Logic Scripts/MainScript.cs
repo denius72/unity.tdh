@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class MainScript : MonoBehaviour
 {
 	
-	public GameObject fpscounter;
+	private GameObject fpscounter;
 	private GameObject mCanvas;
 	public bool finishedloading = false;
 	

@@ -55,7 +55,7 @@ public class player : MonoBehaviour
 
     private void OnFocusPerformed(InputAction.CallbackContext context)
     {
-        player_speed = 3.0f;
+        player_speed = 10.0f;
     }
 
     private void OnFocusCanceled(InputAction.CallbackContext context)

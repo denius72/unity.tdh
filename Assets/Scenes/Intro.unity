@@ -9902,6 +9902,7 @@ GameObject:
   - component: {fileID: 251611478}
   - component: {fileID: 251611477}
   - component: {fileID: 251611476}
+  - component: {fileID: 251611481}
   - component: {fileID: 251611475}
   - component: {fileID: 251611480}
   m_Layer: 0
@@ -10031,6 +10032,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sakura: {fileID: 2082180281}
+--- !u!114 &251611481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251611474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85458cf0d8209144abf8debd32ff7115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finishedloading: 0
+  playerframe: {fileID: 0}
+  textbox: {fileID: 0}
+  playerscript: {fileID: 0}
+  clockscript: {fileID: 0}
+  bossframe: {fileID: 0}
+  canvas_camera: {fileID: 1044073985}
+  fps: 60
 --- !u!1001 &499459950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10578,9 +10599,7 @@ MonoBehaviour:
   startfadecontrol: 1
   playerframe: {fileID: 686193971}
   playerscript: {fileID: 686193974}
-  clockscript: {fileID: 686193972}
   pausescript: {fileID: 686193973}
-  bossframe: {fileID: 686193968}
   mainscr: {fileID: 686193976}
   material: {fileID: 2100000, guid: 35e0701c860448e4b8fca3c96ccd9a10, type: 2}
   custom: {fileID: 8600000, guid: d5b09ecb01e726545879239f0c34249c, type: 2}

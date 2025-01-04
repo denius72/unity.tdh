@@ -330,6 +330,15 @@ public class MainMenuScript : MonoBehaviour
 		}
 	}
 	
+    IEnumerator newGameFadeOut()
+    {
+
+    	controls.Menu.Disable();
+    	StartCoroutine(load.fadeInAnim());
+        yield return new WaitForSeconds(1);
+		StartCoroutine(load.LoadSceneAsync("Test03"));        
+
+    }
 	
 	void buttonConfirmPress()
 	{
@@ -344,7 +353,8 @@ public class MainMenuScript : MonoBehaviour
 					Debug.Log("started loading main scene");
 					//StartCoroutine(load.LoadSceneAsync("GensouHakurei"));
 					//StartCoroutine(load.LoadSceneAsync("Test01"));
-					StartCoroutine(load.LoadSceneAsync("Test03"));
+					//controls.Menu.Disable();
+					StartCoroutine(newGameFadeOut());
 					break;
 				case 1:
 					Debug.Log("2 was pressed");

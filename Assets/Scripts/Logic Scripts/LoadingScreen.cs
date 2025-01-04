@@ -97,7 +97,7 @@ public class LoadingScreen : MonoBehaviour
         //StartCoroutine(load_canvas());
     }
 
-    void fadein()
+    public void fadein()
     {
         // Randomly select one of the bundles
         List<Texture2D>[] bundles = new List<Texture2D>[] { loadcharBundle1, loadcharBundle2, loadcharBundle3 };
@@ -110,6 +110,20 @@ public class LoadingScreen : MonoBehaviour
         loadcharobj.GetComponent<CanvasGroup>().alpha = 1.0f;
         bgobj.GetComponent<CanvasGroup>().alpha = 1.0f;
         bgobj.transform.localScale = new Vector3(10.0f, 10.0f, 1);
+        //StartCoroutine(fadeInAnim());
+    }
+
+    public IEnumerator fadeInAnim()
+    {
+        bgobj.GetComponent<CanvasGroup>().alpha = 1.0f;
+        bgobj.transform.localScale = new Vector3(0.0f, 0.0f, 1);
+        float i = 0.0f;
+        while (i < 10.0f)
+        {
+            bgobj.transform.localScale = new Vector3(i, i, 1);
+            i += 20f * Time.unscaledDeltaTime;
+            yield return null;
+        }
     }
 
     public IEnumerator fadeout()
