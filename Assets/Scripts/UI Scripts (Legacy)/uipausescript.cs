@@ -140,7 +140,7 @@ public class uipausescript : MonoBehaviour
 		{
 			Time.timeScale = 0f;
 			AudioListener.pause = true;
-
+			controls.Player.Disable();
 			fadein = true;
 			startfadecontrol = true;
 			pausebgobj.GetComponent<AudioSource>().clip = clip;

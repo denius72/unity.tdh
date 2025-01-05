@@ -9,23 +9,33 @@ public class Test03 : MonoBehaviour
     public AudioClip clip;
     public gamelogic game;
     private GameObject lCanvas;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         lCanvas = GameObject.Find("Canvas_Loading");;
         game = lCanvas.GetComponent<gamelogic>();
-        objToAttachSong.AddComponent<AudioSource>();
-        objToAttachSong.GetComponent<AudioSource>().clip = clip;
-        objToAttachSong.GetComponent<AudioSource>().ignoreListenerPause=true;
-        objToAttachSong.GetComponent<AudioSource>().volume = game.BGMVolume;
-        objToAttachSong.GetComponent<AudioSource>().loop = true;
-        objToAttachSong.GetComponent<AudioSource>().Play();
+        audioSource = objToAttachSong.AddComponent<AudioSource>();
+        audioSource.clip = clip;
+        audioSource.ignoreListenerPause = true;
+        audioSource.volume = game.BGMVolume;
+        audioSource.loop = true;
+        audioSource.Play();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // if game paused
+        if (Time.timeScale == 0f)
+        {
+            audioSource.Pause();
+        }
+        else if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
     }
 }
+

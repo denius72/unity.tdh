@@ -36,6 +36,10 @@ public class gamelogic : MonoBehaviour
     public int player_mp = 2;
     public int maxmp = 5;
 
+    // perfect possession gauge
+    public int player_transform = 0;
+    public int maxtransform = 100;
+
     //extra lives and bombs will be converted into money at the end of a level, except during ARCADE_MODE
 	public int player_money = 0;
 	public int maxmoney = 99999;

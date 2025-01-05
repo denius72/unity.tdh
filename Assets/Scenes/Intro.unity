@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.8
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.40204632, g: 0.447456, b: 0.5188994, a: 0.8}
+  m_IndirectSpecularColor: {r: 0.6329309, g: 0.5541887, b: 0.65605253, a: 0.8}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -213,8 +213,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4806620251284779638, guid: 7e03542c98c9ee3469288aacd67e65fe, type: 3}
       propertyPath: m_fontStyle
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4806620251284779638, guid: 7e03542c98c9ee3469288aacd67e65fe, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b9398272e7f321840a55294c01c1e464, type: 2}
     - target: {fileID: 4992722130266514607, guid: 7e03542c98c9ee3469288aacd67e65fe, type: 3}
       propertyPath: m_Name
       value: btnOption
@@ -9924,7 +9928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb095fd6593d0ec4d9e87268b4ef6d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainscr: {fileID: 686193976}
+  mainscr: {fileID: 0}
   textbox: {fileID: 686193975}
   playerscript: {fileID: 686193974}
   clockscript: {fileID: 686193972}
@@ -10039,7 +10043,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251611474}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85458cf0d8209144abf8debd32ff7115, type: 3}
   m_Name: 
@@ -10066,8 +10070,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2486851482046037291, guid: a2098a1c96627554084979d258633659, type: 3}
       propertyPath: m_fontStyle
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2486851482046037291, guid: a2098a1c96627554084979d258633659, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b9398272e7f321840a55294c01c1e464, type: 2}
     - target: {fileID: 2486851482046037291, guid: a2098a1c96627554084979d258633659, type: 3}
       propertyPath: m_enableAutoSizing
       value: 0
@@ -10163,6 +10171,10 @@ PrefabInstance:
     - target: {fileID: 8545390136074062635, guid: a2098a1c96627554084979d258633659, type: 3}
       propertyPath: m_Name
       value: btnContinue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545390136074062635, guid: a2098a1c96627554084979d258633659, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10363,12 +10375,12 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 81257998c086f6b449fd048e3027bb3e, type: 2}
     - target: {fileID: 6750433398866197814, guid: 255c8fad8c96abf4480441882bbf3bba, type: 3}
       propertyPath: m_fontStyle
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6750433398866197814, guid: 255c8fad8c96abf4480441882bbf3bba, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -5688165703963951009, guid: 81257998c086f6b449fd048e3027bb3e, type: 2}
+      objectReference: {fileID: 2100000, guid: b9398272e7f321840a55294c01c1e464, type: 2}
     - target: {fileID: 6750433398866197814, guid: 255c8fad8c96abf4480441882bbf3bba, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -10401,7 +10413,6 @@ GameObject:
   - component: {fileID: 686193979}
   - component: {fileID: 686193978}
   - component: {fileID: 686193977}
-  - component: {fileID: 686193976}
   - component: {fileID: 686193975}
   - component: {fileID: 686193974}
   - component: {fileID: 686193973}
@@ -10429,7 +10440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c3ecf8720418b4eba77de6ccde5e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainscr: {fileID: 686193976}
+  mainscr: {fileID: 0}
   finished_loading: 0
   fadein: 0
   startfadecontrol: 1
@@ -10454,7 +10465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finished_loading: 0
-  mainscr: {fileID: 686193976}
+  mainscr: {fileID: 0}
   fpscounter: {fileID: 0}
   difficultycounter: {fileID: 0}
   fadein: 0
@@ -10480,7 +10491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finished_loading: 0
-  mainscr: {fileID: 686193976}
+  mainscr: {fileID: 0}
   fpscounter: {fileID: 0}
   difficultycounter: {fileID: 0}
   fadein: 0
@@ -10506,7 +10517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finished_loading: 0
-  mainscr: {fileID: 686193976}
+  mainscr: {fileID: 0}
   fpscounter: {fileID: 0}
   difficultycounter: {fileID: 0}
   fadein: 0
@@ -10531,7 +10542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4386f09821c73342b4232f038702a12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainscr: {fileID: 686193976}
+  mainscr: {fileID: 0}
   finished_loading: 0
   fadein: 0
   startfadecontrol: 1
@@ -10553,7 +10564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecea2b9ed9e9e9b4380aea98a8d8dc92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainscr: {fileID: 686193976}
+  mainscr: {fileID: 0}
   finished_loading: 0
   fadein: 0
   startfadecontrol: 1
@@ -10572,7 +10583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finished_loading: 0
-  mainscr: {fileID: 686193976}
+  mainscr: {fileID: 0}
   character_text: {fileID: 0}
   MenuFont: {fileID: 0}
   fadein: 0
@@ -10600,7 +10611,7 @@ MonoBehaviour:
   playerframe: {fileID: 686193971}
   playerscript: {fileID: 686193974}
   pausescript: {fileID: 686193973}
-  mainscr: {fileID: 686193976}
+  mainscr: {fileID: 0}
   material: {fileID: 2100000, guid: 35e0701c860448e4b8fca3c96ccd9a10, type: 2}
   custom: {fileID: 8600000, guid: d5b09ecb01e726545879239f0c34249c, type: 2}
   char1:
@@ -10618,27 +10629,6 @@ MonoBehaviour:
   isReady: 0
   txtkeypressed: 0
   drawall: 0
---- !u!114 &686193976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686193967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5352e585be760e54eba2589392ef72d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpscounter: {fileID: 686193967}
-  finishedloading: 0
-  playerframe: {fileID: 686193971}
-  textbox: {fileID: 686193975}
-  playerscript: {fileID: 686193974}
-  clockscript: {fileID: 686193972}
-  bossframe: {fileID: 686193968}
-  canvas_camera: {fileID: 0}
-  fps: 60
 --- !u!114 &686193977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10775,8 +10765,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3846216483597769014, guid: 4239a0968444dd94c8d52542b0c52fb2, type: 3}
       propertyPath: m_fontStyle
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3846216483597769014, guid: 4239a0968444dd94c8d52542b0c52fb2, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b9398272e7f321840a55294c01c1e464, type: 2}
     - target: {fileID: 4555678110129049992, guid: 4239a0968444dd94c8d52542b0c52fb2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11614,8 +11608,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999219577955514107, guid: 917c709efdf2a504eaa7515a99e3e4ee, type: 3}
       propertyPath: m_fontStyle
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3999219577955514107, guid: 917c709efdf2a504eaa7515a99e3e4ee, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b9398272e7f321840a55294c01c1e464, type: 2}
     - target: {fileID: 5409720781569954142, guid: 917c709efdf2a504eaa7515a99e3e4ee, type: 3}
       propertyPath: m_Name
       value: btnExit
