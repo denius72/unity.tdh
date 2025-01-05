@@ -26,7 +26,7 @@ public class gamelogic : MonoBehaviour
     //9 - (9,9)
 
     public int player_level = 1;
-    private int maxlevel = 9;
+    private int maxlevel = 99;
 
 	public int player_graze = 0;
 
