@@ -42,7 +42,7 @@ public class MainScript : MonoBehaviour
 		fpscounter.GetComponent<TextMeshProUGUI>().alignment = TextAlignmentOptions.Left;
 		
         //To change framerate, must disable vsync
-        QualitySettings.vSyncCount = 1;
+        QualitySettings.vSyncCount = 0;
         //Application.targetFrameRate = 60;
 		Time.fixedDeltaTime = 0.016f;
 

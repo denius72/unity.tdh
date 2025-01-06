@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.8
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6329309, g: 0.5541887, b: 0.65605253, a: 0.8}
+  m_IndirectSpecularColor: {r: 0.40204632, g: 0.447456, b: 0.5188994, a: 0.8}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10233,7 +10233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8376014898259587037, guid: 7eb3992b099ae414ebaa6345d9085920, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.72
+      value: -15.9
       objectReference: {fileID: 0}
     - target: {fileID: 8376014898259587037, guid: 7eb3992b099ae414ebaa6345d9085920, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10412,6 +10412,7 @@ GameObject:
   - component: {fileID: 686193980}
   - component: {fileID: 686193979}
   - component: {fileID: 686193978}
+  - component: {fileID: 686193982}
   - component: {fileID: 686193977}
   - component: {fileID: 686193975}
   - component: {fileID: 686193974}
@@ -10641,6 +10642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea12bb0ca5f5bd7bbaa58be7473e239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  graphicsOptionsUI: {fileID: 686193982}
   objToAttachSong: {fileID: 1353962835}
   clip: {fileID: 8300000, guid: 91b19caa59191804c888697e059a5e02, type: 3}
   audioSelect: {fileID: 8300000, guid: fb8fcd0526e3bfb43a21bd77359ebee9, type: 3}
@@ -10751,6 +10753,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &686193982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686193967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62d8af1c875bbf49a91b1d98d7b270e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showGraphicsMenu: 0
 --- !u!1001 &815762368
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class MainMenuScript : MonoBehaviour
 {
+	public TempImguiGraphics graphicsOptionsUI;
 	//Music
 	public GameObject objToAttachSong;
 	public AudioClip clip;
@@ -364,6 +365,7 @@ public class MainMenuScript : MonoBehaviour
 					break;
 				case 3:
 					Debug.Log("4 was pressed");
+					graphicsOptionsUI.ToggleGraphicsMenu();
 					break;
 				case 4:
 					Application.Quit();
