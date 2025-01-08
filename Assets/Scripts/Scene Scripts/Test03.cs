@@ -8,6 +8,7 @@ public class Test03 : MonoBehaviour
     public GameObject objToAttachSong;
     public AudioClip clip;
     public gamelogic game;
+    public UITransition[] uiTransitions;
     private GameObject lCanvas;
     private AudioSource audioSource;
 
@@ -22,6 +23,14 @@ public class Test03 : MonoBehaviour
         audioSource.volume = game.BGMVolume;
         audioSource.loop = true;
         audioSource.Play();
+
+        for (int i = 0; i < uiTransitions.Length; i++)
+        {
+            if (uiTransitions[i] != null)
+            {
+                StartCoroutine(uiTransitions[i].TransitionUI(true, 3.0f));
+            }
+        }
     }
 
     // Update is called once per frame
