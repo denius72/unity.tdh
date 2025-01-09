@@ -7,7 +7,6 @@ public class player : MonoBehaviour
 {
     private GameObject mCanvas;
     private GameObject lCanvas;
-    private GameObject maincam;
     public GameObject playerobj;
     public MasterControls controls;
     private Animator animator;
@@ -19,7 +18,6 @@ public class player : MonoBehaviour
     public float cameraSmoothness = 10.0f;
 
     private Vector2 movement = Vector2.zero;
-    private Vector3 cameraOffset;
 
     void Awake()
     {
@@ -33,12 +31,8 @@ public class player : MonoBehaviour
         lCanvas = GameObject.Find("Canvas_Loading");
         game = lCanvas.GetComponent<gamelogic>();
         mCanvas = GameObject.Find("Canvas");
-        maincam = GameObject.Find("Main Camera");
         animator = playerobj.GetComponent<Animator>();
         controls.Player.Enable();
-
-        // Calculate initial camera offset
-        cameraOffset = maincam.transform.position - playerobj.transform.position;
     }
 
     private void OnEnable()
@@ -70,17 +64,31 @@ public class player : MonoBehaviour
         movement = controls.Player.Movement.ReadValue<Vector2>();
 
         // Move the player
-        Vector3 targetPosition = new Vector3(playerobj.transform.position.x + movement.x * player_speed, playerobj.transform.position.y, playerobj.transform.position.z + movement.y * player_speed);
-        playerobj.transform.position = Vector3.Lerp(playerobj.transform.position, targetPosition, Time.deltaTime);
+        Vector3 targetPosition = new Vector3(playerobj.transform.position.x + movement.x * player_speed, 
+                                             playerobj.transform.position.y, 
+                                             playerobj.transform.position.z + movement.y * player_speed);
 
-        // Smoothly follow the player with the camera
-        Vector3 targetCameraPosition = playerobj.transform.position + cameraOffset;
-        maincam.transform.position = Vector3.Lerp(maincam.transform.position, targetCameraPosition, Time.deltaTime * cameraSmoothness);
+        // Check if the game is in orthographic exploration mode
+        if (game.gamestate == gamelogic.GameState.EXPLORATION_MODE_ORTOGRAPHIC)
+        {
+            // For isometric view, we need to apply a 45 degree rotation offset to the movement direction
+            Vector3 isometricMovement = new Vector3(movement.x - movement.y, 0, movement.x + movement.y);
+            targetPosition = playerobj.transform.position + isometricMovement * player_speed;
+        }
+
+        playerobj.transform.position = Vector3.Lerp(playerobj.transform.position, targetPosition, Time.deltaTime);
 
         // Rotate the player based on movement direction
         if (movement != Vector2.zero)
         {
             float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
+
+            // Apply 45 degree offset if in orthographic exploration mode
+            if (game.gamestate == gamelogic.GameState.EXPLORATION_MODE_ORTOGRAPHIC)
+            {
+                angle += 45.0f;
+            }
+
             Quaternion targetRotation = Quaternion.Euler(new Vector3(0, -angle + 90, 0));
             playerobj.transform.rotation = Quaternion.Slerp(playerobj.transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
         }

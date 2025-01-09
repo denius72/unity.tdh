@@ -9,14 +9,18 @@ public class Test03 : MonoBehaviour
     public AudioClip clip;
     public gamelogic game;
     public UITransition[] uiTransitions;
+    public bool isOrtographicScene;
     private GameObject lCanvas;
     private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
+        //find game state singleton
         lCanvas = GameObject.Find("Canvas_Loading");;
         game = lCanvas.GetComponent<gamelogic>();
+
+        //attach scene music to obj and play
         audioSource = objToAttachSong.AddComponent<AudioSource>();
         audioSource.clip = clip;
         audioSource.ignoreListenerPause = true;
@@ -24,6 +28,17 @@ public class Test03 : MonoBehaviour
         audioSource.loop = true;
         audioSource.Play();
 
+        // makes the player walk diagonally.
+        if (isOrtographicScene)
+        {
+            game.gamestate = gamelogic.GameState.EXPLORATION_MODE_ORTOGRAPHIC;
+        }
+        else //makes the player walk straight.
+        {
+            game.gamestate = gamelogic.GameState.EXPLORATION_MODE;
+        }
+
+        //show UI
         for (int i = 0; i < uiTransitions.Length; i++)
         {
             if (uiTransitions[i] != null)

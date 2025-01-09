@@ -84,25 +84,25 @@ public class gamelogic : MonoBehaviour
         DIALOGUE_MODE,
         CHALLENGE,
         ARCADE_MODE,
-        EXPLORATION_MODE
+        EXPLORATION_MODE,
+        EXPLORATION_MODE_ORTOGRAPHIC
     }
 	//0 = main menu
 		// pause menu shoudn't open
 	//1 = Story STG mode
-		// pause menu options are Resume, Retry, Options, Exit
+		// 
 	//2 = Dialogue mode
 		// pause menu options are Resume, Skip, Exit
 	//3 = Challenge
 		// pause menu options are Resume, Retry, Options, Exit
 		// difficulty will be set to "Overdrive"
     //4 = Arcade Mode
-        // pause menu options are Resume, Restart, Options, Exit
-        // level will be 9, but won't show on HUD
-        // progress will carry between levels, meaning health and spell won't reset to default 
-        // the extra mode will use this state
-        // money will be renamed as points
+        // For a minigame
     //5 = Exploration mode
         // used in story mode to walk around in the 3D world.
+    //6 = Exploration mode Ortographic
+        // used in story mode to walk around in the 3D world. The camera is ortographic which means when on this state the player should walk 45° northeast to match controls.
+
     public GameState gamestate = GameState.MAIN_MENU;
 	
 	public float SFXVolume = 1.0f;
